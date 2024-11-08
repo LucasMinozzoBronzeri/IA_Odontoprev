@@ -8,13 +8,15 @@
 Clínicas médicas fraudando consultas/exames/cirurgias. E, clientes que utilizam do plano de forma imprópria/desnecessária. Tudo isso gerando gastos para a Odontoprev.
 
 # Descrição Solução
-Um aplicativo que coloque a Odontoprev, o cliente, e a clínica no mesmo ambiente. Um aplicativo para que os clientes possam agendar e acompanhar suas consultas, contratar planos, e avaliar cínicas.  A clínica por sua vez, poderá lançar informações referentes as consultas dos clientes, e receber também.
+Um aplicativo que coloque a Odontoprev, o cliente, e a clínica no mesmo ambiente. Um aplicativo para que os clientes possam agendar e acompanhar suas consultas, contratar planos, e avaliar clínicas.  A clínica por sua vez, poderá lançar informações referentes as consultas dos clientes, e receber também.
 Além disso, tanto no perfil da clínica e cliente, terão um histórico de consultas. Assim, podemos identificar padrões que indicam uma possível fraude, como: 
 -	Consultas para o mesmo “problema” marcadas de forma recorrente;
 -	Tempo de atendimento; 
 -	Autorização prévia para procedimentos, consultas e exames mais caros;  
 
-Uma funcionalidade que queremos implementar, é que só será possível começar um atendimento, se o cliente agendar e a clínica validar as informações. Por último, no momento do check-in, a consulta só irá ser iniciado, somente quando o cliente apresentar o código token para a recepcionista. Além disso, o sistema acompanhará um validador de IP, identificando possíveis compartilhamentos de login.
+Uma funcionalidade que queremos implementar, é que só será possível começar um atendimento, se o cliente agendar e a clínica validar as informações. Por último, no momento do check-in, a consulta só irá ser iniciada, quando o cliente apresentar o código token para a recepcionista. Além disso, o sistema acompanhará um validador de IP, identificando possíveis compartilhamentos de login.
+
+Atualizações para a entrega 2, adicionamos uma tabela ao nosso banco, que guarda sinistros, ou seja, caso haja alguma suspeita de algum usuário, a tabela ira guardar as informações do usuário, das consultas e dos Doutores que realizaram as consultas, fizemos também uma alteração na parte de IA, agora o nosso modelo prediz se o usuário é suspeito ou não, no caso de fraudes, os dados passados são: Total_Consultas, Idade,Renda_Anual, Score_Credito, Numero_Transacoes, Renda_por_Transacao e Idade_por_Consulta, para predizer a coluna: Chances_Fraude;
 
 # Público-alvo
 Clínicas, e pessoas físicas a partir dos 18 anos. De um lado, uma clínica buscando mais clientes e de outro lado o cliente, com acesso as melhores e mais indicadas clínicas que temos parceria. 
