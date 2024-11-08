@@ -39,5 +39,7 @@ Trabalhando com o treinamento de um modelo de regressão, que tem como dados: To
 - Matplotlib: Utilizado para a criação de gráficos, para a análise dos dados de Distribiução de Score de Crédito, Renda Anual vs Chances de Fraude e Número de Transações vs Chances de Fraude;
 - Scikit-learn: Fazendo a separação dos dados em "X" e "y" depois fazemos a separação em X_train, X_test, y_train, y_test, utilizando "train_test_split", logo em seguida nós treinamos o modelo e utilizamos o accuracy_score, para vermos qual foi a Acurácia do modelo;  
 
+Iremos fazer uma API para a coleta dos dados que serão utilizados no modelo de detecção de sinistros, o modelo, ainda na versão Beta, utiliza de dados ficticios, para que haja o funcionamento;
+
 # Link Pitch
 https://youtu.be/SBQ-_mBXdK0
